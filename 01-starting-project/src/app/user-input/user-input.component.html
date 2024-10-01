@@ -1,0 +1,24 @@
+<form>
+    <div class="input-group">
+        <div>
+            <label for="initial_investment">INITIAL INVESTMENT</label>
+            <input id="initial_investment" name="investment.initialInvestment" type="number" step="0.1" [(ngModel)]="investment.initialInvestment">
+        </div>
+        <div>
+            <label for="annual_investment">ANNUAL INVESTMENT</label>
+            <input id="annual_investment" name="investment.annualInvestment" type="number" step="0.1" [(ngModel)]="investment.annualInvestment">    
+        </div>
+    </div>
+    <div class="input-group">
+        <div>
+            <label for="expected_return">Expected Return</label>
+            <input id="expected_return" name="investment.expectedReturn" type="number" [(ngModel)]="investment.expectedReturn">    
+        </div>
+        <div>
+            <label for="duration">DURATION</label>
+            <input id="duration" name="investment.duration" type="number" [(ngModel)]="investment.duration">    
+        </div>
+    </div>
+    
+    <button (click)="calculate()">CALCULATE</button>
+</form>
